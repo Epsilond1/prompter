@@ -1,4 +1,11 @@
 /.idea
 /*.html
-.html
-
+*.html
+*.jpg
+*.txt
+*.js
+*.png
+/env
+.css
+.gif
+.csv
