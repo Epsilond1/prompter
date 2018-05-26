@@ -1,0 +1,57 @@
+.coolform input  {
+    opacity:0;
+    filter: alpha(opacity=0);
+    width:100%;
+    height:100%;
+    display:inline-block;
+    vertical-align: top;
+    margin:0;
+}
+
+/* Врапперы к инпутам */
+.coolform.checkbox {
+    width:13px;
+    height:13px;
+    display:inline-block;
+    vertical-align:top;
+    position: relative;
+    background: none;
+    background-size: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.coolform.radio {
+    width:13px;
+    height:13px;
+    display:inline-block;
+    vertical-align:top;
+    position: relative;
+    background: #ececec;
+    border: 1px solid #c8c8c8;
+    border-radius: 50%;
+}
+
+/* Равноразмерные спрайты позволяют не разделять стили для типов */
+/*.field-worker-profile-checkbox .coolform.checkbox:hover, .field-worker-profile-checkbox .coolform.checkbox.focus {
+    background: none;
+}
+.field-worker-profile-checkbox .coolform.checkbox.disable {
+    background: none;
+}*/
+.coolform.checkbox.active {
+    background: url("../../images/checkbox-worker.svg") no-repeat center center;
+    background-size: 10px;
+}
+.coolform.radio.active {
+    background: #ececec url("../../images/coolform-radio.png") no-repeat center center;
+}
+/*
+.field-worker-profile-checkbox .coolform.checkbox.active:hover, .coolform.checkbox.active.focus {
+    background: url("../../images/checkbox-worker.svg") no-repeat center center;
+    background-size: 10px;
+}
+.field-worker-profile-checkbox .coolform.checkbox.active.disable {
+    background: url("../../images/checkbox-worker.svg") no-repeat center center;
+    background-size: 10px;
+}*/

@@ -1,0 +1,116 @@
+/****************************************************
+*****************************************************
+Path:	/ Science
+*****************************************************
+*****************************************************/
+
+.niulist > p:nth-child(1) a, .niudescr > .item:nth-child(1) .niudescr-item-heading h4 { color : #5D00D0; }
+.niulist > p:nth-child(2) a, .niudescr > .item:nth-child(2) .niudescr-item-heading h4 { color : #00A698; }
+.niulist > p:nth-child(3) a, .niudescr > .item:nth-child(3) .niudescr-item-heading h4 { color : #CF0000; }
+.niulist > p:nth-child(4) a, .niudescr > .item:nth-child(4) .niudescr-item-heading h4 { color : #5CBA00; }
+.niulist > p:nth-child(5) a, .niudescr > .item:nth-child(5) .niudescr-item-heading h4 { color : #BBAC00; }
+.niulist > p:nth-child(6) a, .niudescr > .item:nth-child(6) .niudescr-item-heading h4 { color : #877052; }
+.niulist > p:nth-child(7) a, .niudescr > .item:nth-child(7) .niudescr-item-heading h4 { color : #EC7500; }
+
+.niulist,
+.j-table
+{
+	display 	  : table;
+	counter-reset : niu-order;
+	font-weight   : bold;	
+}
+.niulist > p,
+.j-table > p
+{
+	display 		  : table-cell;
+	vertical-align	  : top;
+	counter-increment : niu-order;
+	padding-left 	  : 30px;
+}
+.niulist > p > a
+{
+	font-size : 12px;
+}
+.niulist > p:before
+{
+	content		: counter(niu-order);
+	position	: absolute;
+	display		: block;
+	margin-left : -30px;
+	color 		: #ddd;
+	font-family : "Arial Narrow", "Arial", sans-serif;
+	font-size	: 50px;	
+	line-height : 100%;	
+}
+@media screen and (max-width:1200px)
+{
+	.niulist, .niulist > p
+	{
+		display : block;
+		margin-bottom : 5px;
+		padding-left : 0;
+	}
+	.niulist > p:before
+	{
+		display : none;
+	}
+	.niulist > p > a
+	{
+		display : block;
+		padding : 10px;
+		background : #F9F6F3;
+		font-size : 100%;
+	}
+}
+
+
+.niudescr .niudescr-item-heading > h4:before
+{
+	position 	: absolute;
+	display  	: block;
+	right 		: 0;
+	bottom 		: 0;
+	background	: white;
+	padding 	: 10px;
+	font-size 	: 50px;
+	font-weight : bold;
+	line-height : 100%;	
+	color 		: #DCDAC5;
+}
+.niudescr > .item:nth-child(1) .niudescr-item-heading h4:before	{ content: "1"; }
+.niudescr > .item:nth-child(2) .niudescr-item-heading h4:before	{ content: "2"; }
+.niudescr > .item:nth-child(3) .niudescr-item-heading h4:before	{ content: "3"; }
+.niudescr > .item:nth-child(4) .niudescr-item-heading h4:before	{ content: "4"; }
+.niudescr > .item:nth-child(5) .niudescr-item-heading h4:before	{ content: "5"; }
+.niudescr > .item:nth-child(6) .niudescr-item-heading h4:before	{ content: "6"; }
+.niudescr > .item:nth-child(7) .niudescr-item-heading h4:before	{ content: "7"; }
+
+@media screen and (max-width:992px)
+{
+	.niudescr .niudescr-item-heading > h4:before
+	{
+		position 	: absolute;
+		display  	: block;
+		right 		: 5px;
+		bottom 		: -10px;
+		background	: white;
+		padding 	: 5px;
+		font-size 	: 40px;
+		font-weight : bold;
+		line-height : 100%;	
+		color 		: #DCDAC5;
+	}
+}
+@media screen and (min-width:1200px) and (max-width:1366px)
+{
+
+}
+@media screen and (max-width:992px)
+{
+
+}
+
+#for-young-scientists
+{
+	background : #F5F2E3 url("../img/bg-green-atoms-center.jpg") no-repeat center top;
+}
