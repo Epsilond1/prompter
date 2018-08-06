@@ -12,7 +12,7 @@ from pymongo import MongoClient
 
 
 class DBClient(object):
-    HOST = '127.0.0.1'
+    HOST = '142.93.104.230'
     PORT = 27017
 
     @staticmethod

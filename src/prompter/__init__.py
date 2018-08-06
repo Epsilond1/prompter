@@ -14,9 +14,9 @@ db = DBClient('epsilond1', 'db_project_db')
 
 
 class Prompter(object):
-    TABLE_NAME = 'TESTING3'
-    ALL_UNIVERSITIES = db.get_universities(TABLE_NAME)
-    ALL_EXAMS = {index: value for index, value in enumerate(db.get_exams(TABLE_NAME))}
+    COLLECTION_NAME = 'PRE'
+    ALL_UNIVERSITIES = db.get_universities(COLLECTION_NAME)
+    ALL_EXAMS = {index: value for index, value in enumerate(db.get_exams(COLLECTION_NAME))}
 
     @staticmethod
     def search_optimal(univers, user_exams):
@@ -58,7 +58,7 @@ for exam in exams:
     result_exams[p.ALL_EXAMS[exam]] = int(input())
 
 print('Оптимальные кафедры для поступления: ')
-for r in p.search_optimal(db.get_maybe_univer(p.TABLE_NAME, result_exams), result_exams):
+for r in p.search_optimal(db.get_maybe_univer(p.COLLECTION_NAME, result_exams), result_exams):
     print('{} {}'.format(r['univer_name'], r['faculty'], end=' '))
     for k, v in r['results'].items():
         print('{}: {}'.format(k, v), end=' ')
