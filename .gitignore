@@ -5,7 +5,7 @@
 *.txt
 *.js
 *.png
-/env
+/env/*
 .css
 .gif
 .csv
